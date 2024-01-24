@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHB09A03 - Hockey's</title>
+    <!-- tailwind and daisyui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <!-- header section -->
+    <header>
+      <div class="container m-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="#"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+
+            <a class="text-xl font-extrabold"
+              >Hockey<span class="text-[#FF4240] m-0 p-0">'</span>s</a
+            >
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal active:text-[#FF4240] px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn btn-[#FF4240]">Button</a>
+          </div>
+        </div>
+
+        <!-- slider -->
+        <div class="carousel w-full h-1/2 lg:h-screen">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./assests/Images/1.png" class="w-full" />
+            <div
+              class="absolute flex transform -translate-y-1/2 left-8 bottom-8 gap-4"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-neutral rounded-3xl p-4 text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-neutral rounded-3xl p-4 text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="./assests/Images/22.jpg"
+              class="w-full h-138 rounded-2xl"
+            />
+            <div
+              class="absolute flex transform -translate-y-1/2 left-8 bottom-8 gap-4"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-neutral rounded-3xl p-4 text-white"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-neutral rounded-3xl p-4 text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="./assests/Images/33.jpg"
+              class="w-full h-138 rounded-2xl"
+            />
+            <div
+              class="absolute flex transform -translate-y-1/2 left-8 bottom-8 gap-4"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-neutral rounded-3xl p-4 text-white"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-neutral rounded-3xl p-4 text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main class="container m-auto">
+      <section class="hockeys-club my-24">
+        <div class="section-header text-center w-3/5 m-auto">
+          <h2 class="section-title text-4xl font-extrabold">
+            Professional Hockeys Club
+          </h2>
+          <p class="font-semibold pt-6 text-[#13131899]">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <!-- section-header ends -->
+
+
+        <div class="hockey-club-section container grid grid-cols-2 lg:grid-cols-4 mt-12 gap-8">
+          <div class="section-item text-center">
+            <div class="radial-progress text-[#FF4240]" style="--value: 87; --size: 5.5rem; --thickness: .62rem;" role="progressbar">
+              87%
+            </div>
+            <h4 class="text-xl font-semibold mt-6 mb-4">Prayer Facility</h4>
+            <p class="text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+          </div>
+          <!-- section-item area ends -->
+
+          <div class="section-item text-center">
+            <div class="radial-progress text-[#49D293]" style="--value: 95; --size: 5.5rem; --thickness: .62rem;" role="progressbar">
+              95%
+            </div>
+            <h4 class="text-xl font-semibold mt-6 mb-4">Experienced Coach</h4>
+            <p class="text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+          </div>
+          <!-- section-item area ends -->
+
+          <div class="section-item text-center">
+            <div class="radial-progress text-[#FFB546]" style="--value: 90; --size: 5.5rem; --thickness: .62rem;" role="progressbar">
+              90%
+            </div>
+            <h4 class="text-xl font-semibold mt-6 mb-4">Senior Player</h4>
+            <p class="text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+          </div>
+          <!-- section-item area ends -->
+
+          <div class="section-item text-center">
+            <div class="radial-progress text-[#4C8DF1]" style="--value: 80; --size: 5.5rem; --thickness: .62rem;" role="progressbar">
+              80%
+            </div>
+            <h4 class="text-xl font-semibold mt-6 mb-4">Training Ground</h4>
+            <p class="text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+          </div>
+          <!-- section-item area ends -->
+
+        </div>
+        <!-- hockey-club-section ends -->
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer></footer>
+  </body>
+</html>
